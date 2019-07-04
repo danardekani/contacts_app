@@ -1,5 +1,5 @@
 @contacts.map do |contact|
-  {
+{
   first_name: contact.first_name,
   last_name: contact.last_name,
   email: contact.email,
@@ -7,5 +7,5 @@
   id: contact.id,
   middle_name: contact.middle_name, 
   bio: contact.bio_name
-  }
+ }
 end

@@ -7,5 +7,6 @@ Rails.application.routes.draw do
         # Website   |  Controller | Method
     get '/contacts/:id' => 'contacts#show'
     get '/contacts' => 'contacts#index'
+    post '/users' => 'users#create'
   end
 end

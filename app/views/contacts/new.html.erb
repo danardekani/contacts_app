@@ -1,0 +1,14 @@
+<form action="/contacts/new" method="GET">
+   <p>First Name: <input type="text" name="first_name"></p>
+     <p>Middle Name: <input type="text" name="middle_anme"></p>
+       <p>Last Name: <input type="text" name="last_name"></p>
+         <p>Email: <input type="text" name="email"></p>
+           <p>Phone Number: <input type="text" name="phone_number"></p>
+         <p>contact: </p>
+       <select name="user_id">
+     <% @contact.each do |contact| %>
+   <option value="<%= contact.id %>"><%+ contact.name %></option>
+ <% end %>
+ </select>
+ <input type="submit" value="Add new contact">
+</form>

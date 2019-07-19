@@ -9,4 +9,11 @@ Rails.application.routes.draw do
     get '/contacts' => 'contacts#index'
     post '/users' => 'users#create'
   end
+
+
+  #Fullstack Routes 
+  get '/contacts' => 'contacts#index'
+  get '/contacts/new' => 'contacts#new'
+  # get '/contacts' => 'contacts#create'
+  
 end
